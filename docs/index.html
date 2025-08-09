@@ -13,11 +13,11 @@
       <th>Name</th>
       <th>Price (AUD)</th>
       <th>Avg 10D Vol</th>
-      <th>YTD Return</th>
-      <th>3Y Return</th>
-      <th>5Y Return</th>
+      <th>YTD Return (%)</th>
+      <th>3Y Return (%)</th>
+      <th>5Y Return (%)</th>
       <th>P/E</th>
-      <th>Div Yield</th>
+      <th>Div Yield (%)</th>
       <th>52W High</th>
       <th>52W Low</th>
       <th>Inception</th>
@@ -35,11 +35,11 @@
         <td>${etf.Name}</td>
         <td>${etf['Price (AUD)']?.toFixed(2) || 'N/A'}</td>
         <td>${etf['Average 10-day Volume']?.toLocaleString() || 'N/A'}</td>
-        <td>${etf['YTD Return (%)'] !== null ? etf['YTD Return (%)'].toFixed(2) + '%' : 'N/A'}</td>
-        <td>${etf['3Y Return (%)'] !== null ? etf['3Y Return (%)'].toFixed(2) + '%' : 'N/A'}</td>
-        <td>${etf['5Y Return (%)'] !== null ? etf['5Y Return (%)'].toFixed(2) + '%' : 'N/A'}</td>
+        <td>${etf['YTD Return (%)'] !== null ? etf['YTD Return (%)'].toFixed(2) : 'N/A'}</td>
+        <td>${etf['3Y Return (%)'] !== null ? etf['3Y Return (%)'].toFixed(2) : 'N/A'}</td>
+        <td>${etf['5Y Return (%)'] !== null ? etf['5Y Return (%)'].toFixed(2) : 'N/A'}</td>
         <td>${etf['P/E Ratio'] || 'N/A'}</td>
-        <td>${etf['Dividend Yield'] !== null ? (etf['Dividend Yield'] * 100).toFixed(2) + '%' : 'N/A'}</td>
+        <td>${etf['Dividend Yield'] !== null ? (etf['Dividend Yield']).toFixed(2) : 'N/A'}</td>
         <td>${etf['52 Week High']?.toFixed(2) || 'N/A'}</td>
         <td>${etf['52 Week Low']?.toFixed(2) || 'N/A'}</td>
         <td>${etf['Inception Date'] || 'N/A'}</td>
