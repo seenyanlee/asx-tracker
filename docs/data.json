@@ -1,0 +1,90 @@
+[
+  {
+    "Ticker": "VAE.AX",
+    "Name": "Vanguard FTSE Asia ex Japan Shares Index ETF",
+    "YTD Return (%)": 45.14,
+    "1Y Return (%)": 24.88,
+    "3Y Return (%)": 13.22,
+    "5Y Return (%)": 7.74,
+    "P/E Ratio": 15.820512,
+    "Dividend Yield": 1.92,
+    "Updated": "2025-08-09 16:59"
+  },
+  {
+    "Ticker": "ASIA.AX",
+    "Name": "BetaShares Asia Technology Tigers ETF",
+    "YTD Return (%)": 36.37,
+    "1Y Return (%)": 39.11,
+    "3Y Return (%)": 10.89,
+    "5Y Return (%)": 6.4,
+    "P/E Ratio": 19.648638,
+    "Dividend Yield": 0.76,
+    "Updated": "2025-08-09 16:59"
+  },
+  {
+    "Ticker": "IAA.AX",
+    "Name": "iShares Asia 50 ETF (AU)",
+    "YTD Return (%)": 43.12,
+    "1Y Return (%)": 34.98,
+    "3Y Return (%)": 12.69,
+    "5Y Return (%)": 7.43,
+    "P/E Ratio": 13.702509,
+    "Dividend Yield": 2.02,
+    "Updated": "2025-08-09 16:59"
+  },
+  {
+    "Ticker": "YMAX.AX",
+    "Name": "Betashares Australian Top 20 Equities Yield Maximiser Complex ETF",
+    "YTD Return (%)": 61.29,
+    "1Y Return (%)": 9.54,
+    "3Y Return (%)": 17.27,
+    "5Y Return (%)": 10.03,
+    "P/E Ratio": 18.89923,
+    "Dividend Yield": null,
+    "Updated": "2025-08-09 16:59"
+  },
+  {
+    "Ticker": "SYI.AX",
+    "Name": "SPDR MSCI Australia Select High Dividend Yield ETF",
+    "YTD Return (%)": 73.93,
+    "1Y Return (%)": 19.05,
+    "3Y Return (%)": 20.26,
+    "5Y Return (%)": 11.71,
+    "P/E Ratio": 16.261713,
+    "Dividend Yield": 13.01,
+    "Updated": "2025-08-09 16:59"
+  },
+  {
+    "Ticker": "ZYAU.AX",
+    "Name": "Global X S&P/ASX 200 High Dividend ETF",
+    "YTD Return (%)": 28.21,
+    "1Y Return (%)": 15.56,
+    "3Y Return (%)": 8.64,
+    "5Y Return (%)": 5.1,
+    "P/E Ratio": 14.522967,
+    "Dividend Yield": 4.58,
+    "Updated": "2025-08-09 16:59"
+  },
+  {
+    "Ticker": "NDQ.AX",
+    "Name": "BetaShares NASDAQ 100 ETF",
+    "YTD Return (%)": 133.05,
+    "1Y Return (%)": 27.75,
+    "3Y Return (%)": 32.58,
+    "5Y Return (%)": 18.44,
+    "P/E Ratio": 34.742928,
+    "Dividend Yield": 1.84,
+    "Updated": "2025-08-09 16:59"
+  },
+  {
+    "Ticker": "MVB.AX",
+    "Name": "VanEck Australian Banks ETF",
+    "YTD Return (%)": 144.95,
+    "1Y Return (%)": 19.87,
+    "3Y Return (%)": 34.8,
+    "5Y Return (%)": 19.62,
+    "P/E Ratio": 18.796238,
+    "Dividend Yield": 3.44,
+    "Updated": "2025-08-09 16:59"
+  }
+]
