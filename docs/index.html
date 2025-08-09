@@ -31,7 +31,7 @@
   fetch('data.json').then(r => r.json()).then(data => {
     document.querySelector("#etf-table tbody").innerHTML = data.map(etf => `
       <tr>
-        <td>${etf.ticker}</td>
+        <td>${etf.Ticker}</td>
         <td>${etf.Name}</td>
         <td>${etf['Price (AUD)']?.toFixed(2) || 'N/A'}</td>
         <td>${etf['Average 10-day Volume']?.toLocaleString() || 'N/A'}</td>
