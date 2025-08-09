@@ -18,21 +18,24 @@ def fetch_etf_data():
         history = etf.history(period="5y")
         
         # Calculate 3Y/5Y returns (annualized)
-        ret_1y = (history["Close"].iloc[-1] / history["Close"].iloc[-252]) - 1 if len(history) > 252 else None  # 252 trading days in a year
-        ytd_return = (history["Close"].iloc[-1] / history["Close"].iloc[0]) - 1 if len(history) > 0 else None
-        ret_3y = (history["Close"].iloc[-1] / history["Close"].iloc[0]) ** (1/3) - 1 if len(history) > 0 else None
-        ret_5y = (history["Close"].iloc[-1] / history["Close"].iloc[0]) ** (1/5) - 1 if len(history) > 0 else None
-        
+        # ret_1y = (history["Close"].iloc[-1] / history["Close"].iloc[-252]) - 1 if len(history) > 252 else None  # 252 trading days in a year
+        ret_3y = info.get("threeYearAverageReturn", None)
+        ret_5y = info.get("fiveYearAverageReturn", None)
+
         etf_data.append({
             "Ticker": ticker,
             "Name": info.get("longName", ticker),
-            # "Price (AUD)": info.get("currentPrice"),
-            "YTD Return (%)": round(ytd_return * 100, 2) if ytd_return else None,
-            "1Y Return (%)": round(ret_1y * 100, 2) if ret_1y else None,
+            "Price (AUD)": info.get("previousClose"),
+            "Average 10-day Volume": info.get("averageVolume10days"),
+            "YTD Return (%)": info.get("ytdReturn", None),
+            # "1Y Return (%)": round(ret_1y * 100, 2) if ret_1y else None,
             "3Y Return (%)": round(ret_3y * 100, 2) if ret_3y else None,
             "5Y Return (%)": round(ret_5y * 100, 2) if ret_5y else None,
             "P/E Ratio": info.get("trailingPE"),
-            "Dividend Yield": info.get("dividendYield") if info.get("dividendYield") else None,
+            "Dividend Yield": info.get("dividendYield", None),
+            "52 Week High": info.get("fiftyTwoWeekHigh"),
+            "52 Week Low": info.get("fiftyTwoWeekLow"),
+            "Inception Date": pd.to_datetime(info.get("fundInceptionDate"), unit='s').strftime('%Y-%m-%d') if info.get("fundInceptionDate") else None,
             "Updated": datetime.now().strftime("%Y-%m-%d %H:%M")
         })
     

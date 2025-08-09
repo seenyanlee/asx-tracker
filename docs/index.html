@@ -7,25 +7,46 @@
 <body class="p-4">
   <h1 class="mb-4">ASX ETF Tracker</h1>
   <table class="table table-striped" id="etf-table">
-    <thead><tr><th>Ticker</th><th>Name</th><th>YTD Return</th><th>1Y Return</th><th>3Y Return</th><th>5Y Return</th><th>P/E</th><th>Yield</th><th>Updated</th></tr></thead>
-    <tbody></tbody>
-  </table>
-  <script>
-    fetch('data.json').then(r => r.json()).then(data => {
-      document.querySelector("#etf-table tbody").innerHTML = data.map(etf => `
-        <tr>
-          <td>${etf.Ticker}</td>
-          <td>${etf.Name}</td>
-          <td>${etf['YTD Return (%)']}%</td>
-          <td>${etf['1Y Return (%)']}%</td>
-          <td>${etf['3Y Return (%)']}%</td>
-          <td>${etf['5Y Return (%)']}%</td>
-          <td>${etf['P/E Ratio']}</td>
-          <td>${etf['Dividend Yield (%)']}%</td>
-          <td>${etf.Updated}</td>
-        </tr>
-      `).join("");
-    });
-  </script>
+  <thead>
+    <tr>
+      <th>Ticker</th>
+      <th>Name</th>
+      <th>Price (AUD)</th>
+      <th>Avg 10D Vol</th>
+      <th>YTD Return</th>
+      <th>3Y Return</th>
+      <th>5Y Return</th>
+      <th>P/E</th>
+      <th>Div Yield</th>
+      <th>52W High</th>
+      <th>52W Low</th>
+      <th>Inception</th>
+      <th>Updated</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script>
+  fetch('data.json').then(r => r.json()).then(data => {
+    document.querySelector("#etf-table tbody").innerHTML = data.map(etf => `
+      <tr>
+        <td>${etf.ticker}</td>
+        <td>${etf.Name}</td>
+        <td>${etf['Price (AUD)']?.toFixed(2) || 'N/A'}</td>
+        <td>${etf['Average 10-day Volume']?.toLocaleString() || 'N/A'}</td>
+        <td>${etf['YTD Return (%)'] !== null ? etf['YTD Return (%)'].toFixed(2) + '%' : 'N/A'}</td>
+        <td>${etf['3Y Return (%)'] !== null ? etf['3Y Return (%)'].toFixed(2) + '%' : 'N/A'}</td>
+        <td>${etf['5Y Return (%)'] !== null ? etf['5Y Return (%)'].toFixed(2) + '%' : 'N/A'}</td>
+        <td>${etf['P/E Ratio'] || 'N/A'}</td>
+        <td>${etf['Dividend Yield'] !== null ? (etf['Dividend Yield'] * 100).toFixed(2) + '%' : 'N/A'}</td>
+        <td>${etf['52 Week High']?.toFixed(2) || 'N/A'}</td>
+        <td>${etf['52 Week Low']?.toFixed(2) || 'N/A'}</td>
+        <td>${etf['Inception Date'] || 'N/A'}</td>
+        <td>${etf.Updated}</td>
+      </tr>
+    `).join("");
+  });
+</script>
 </body>
 </html>
