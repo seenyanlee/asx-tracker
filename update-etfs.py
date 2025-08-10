@@ -4,9 +4,11 @@ import json
 from datetime import datetime
 import os
 from pprint import pprint
+import json
 
-# ASX ETFs to track
-tickers = ["VAE.AX", "ASIA.AX", "IAA.AX", "YMAX.AX", "SYI.AX", "ZYAU.AX", "NDQ.AX", "MVB.AX"]
+# Read tickers from JSON file
+with open("tickers.json") as f:
+    tickers = json.load(f)  # Gets updated list
 
 os.makedirs("docs", exist_ok=True)
 

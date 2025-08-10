@@ -1,23 +1,104 @@
-name: Update ETF Data (Weekdays 4PM AEST)
+# name: Update ETF Data (Weekdays 4PM AEST)
+# on:
+#   schedule:
+#     - cron: "0 6 * * 1-5"  # 4 PM AEST (06:00 UTC), Mon-Fri
+#   workflow_dispatch:  # Manual trigger
+
+# jobs:
+#   update:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - uses: actions/setup-python@v5
+#         with:
+#           python-version: "3.13"  # Specify major.minor (GitHub may not have patch versions like 3.13.5)
+#       - run: pip install yfinance pandas
+#       - run: python update_etfs.py
+#       - name: Commit changes
+#         run: |
+#           git config --global user.name "GitHub Actions"
+#           git config --global user.email "actions@github.com"
+#           git add docs/data.json
+#           git commit -m "Auto-update ETF data" || echo "No changes to commit"
+#           git push
+
+name: ASX ETF Tracker
 on:
   schedule:
-    - cron: "0 6 * * 1-5"  # 4 PM AEST (06:00 UTC), Mon-Fri
+    - cron: "0 6 * * 1-5"  # 4PM AEST (06:00 UTC) Mon-Fri
   workflow_dispatch:  # Manual trigger
+  repository_dispatch:  # API triggers
+    types: [add_ticker, remove_ticker]
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to commit changes
+      actions: write  # Required for workflow triggers
+    
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+        
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.13"  # Specify major.minor (GitHub may not have patch versions like 3.13.5)
-      - run: pip install yfinance pandas
-      - run: python update_etfs.py
-      - name: Commit changes
+          python-version: "3.13"
+          
+      - name: Update ticker list
+        if: contains(github.event.action, 'ticker')
+        run: |
+          # Load current tickers
+          TICKERS_FILE="tickers.json"
+          if [ -f "$TICKERS_FILE" ]; then
+            TICKERS=$(jq -r '.[]' $TICKERS_FILE)
+          else
+            TICKERS="VAE.AX ASIA.AX IAA.AX YMAX.AX SYI.AX ZYAU.AX NDQ.AX MVB.AX"
+          fi
+
+          # Process API command
+          case "${{ github.event.action }}" in
+            add_ticker)
+              NEW_TICKER="${{ github.event.client_payload.ticker }}"
+              if [[ ! " $TICKERS " =~ " $NEW_TICKER " ]]; then
+                TICKERS="$TICKERS $NEW_TICKER"
+                echo "Added $NEW_TICKER"
+              fi
+              ;;
+            remove_ticker)
+              for ticker in ${{ github.event.client_payload.tickers }}; do
+                TICKERS=${TICKERS//$ticker/}
+              done
+              echo "Removed tickers: ${{ github.event.client_payload.tickers }}"
+              ;;
+          esac
+
+          # Save updated list
+          echo $TICKERS | jq -R -s -c 'split(" ") | map(select(. != ""))' > $TICKERS_FILE
+          git add $TICKERS_FILE
+          git commit -m "Updated tickers: ${{ github.event.action }}" || echo "No ticker changes"
+          
+      - name: Fetch ETF data
+        run: |
+          pip install yfinance pandas
+          python update-etfs.py  # Your data fetching script
+          
+      - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add docs/data.json
-          git commit -m "Auto-update ETF data" || echo "No changes to commit"
+          git commit -m "Auto-update ETF data [skip ci]" || echo "No data changes"
           git push
+          
+      - name: Trigger Pages rebuild
+        if: always()
+        run: |
+          # Force Pages rebuild by touching .nojekyll
+          touch docs/.nojekyll
+          git add docs/.nojekyll
+          git commit -m "Trigger GitHub Pages rebuild" || echo "No rebuild needed"
+          git push
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
