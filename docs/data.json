@@ -2,53 +2,53 @@
   {
     "Ticker": "VAE.AX",
     "Name": "Vanguard FTSE Asia ex Japan Shares Index ETF",
-    "Price (AUD)": 90.45,
-    "Average 10-day Volume": 23398,
+    "Price (AUD)": 91.22,
+    "Average 10-day Volume": 23520,
     "YTD Return (%)": 12.01825,
     "3Y Return (%)": 13.33,
     "5Y Return (%)": 7.41,
-    "P/E Ratio": 16.351088,
+    "P/E Ratio": 16.36722,
     "Dividend Yield": 2.06,
     "52 Week High": 91.79,
     "52 Week Low": 72.01,
     "Inception Date": "2015-12-09",
-    "Updated": "2025-08-25 06:38"
+    "Updated": "2025-08-26 06:36"
   },
   {
     "Ticker": "ASIA.AX",
     "Name": "BetaShares Asia Technology Tigers ETF",
-    "Price (AUD)": 12.42,
-    "Average 10-day Volume": 124326,
+    "Price (AUD)": 12.74,
+    "Average 10-day Volume": 138781,
     "YTD Return (%)": 21.20217,
     "3Y Return (%)": 22.69,
     "5Y Return (%)": 6.88,
-    "P/E Ratio": 20.687902,
+    "P/E Ratio": 20.639189,
     "Dividend Yield": 0.72,
     "52 Week High": 12.76,
     "52 Week Low": 8.42,
     "Inception Date": "2018-09-18",
-    "Updated": "2025-08-25 06:38"
+    "Updated": "2025-08-26 06:36"
   },
   {
     "Ticker": "IAA.AX",
     "Name": "iShares Asia 50 ETF (AU)",
-    "Price (AUD)": 128.89,
-    "Average 10-day Volume": 9506,
+    "Price (AUD)": 130.38,
+    "Average 10-day Volume": 10070,
     "YTD Return (%)": 18.75763,
     "3Y Return (%)": 17.9,
     "5Y Return (%)": 7.7,
-    "P/E Ratio": 14.603907,
+    "P/E Ratio": 14.598306,
     "Dividend Yield": 4.05,
     "52 Week High": 130.91,
     "52 Week Low": 95.27,
     "Inception Date": "2007-11-13",
-    "Updated": "2025-08-25 06:38"
+    "Updated": "2025-08-26 06:36"
   },
   {
     "Ticker": "YMAX.AX",
     "Name": "Betashares Australian Top 20 Equities Yield Maximiser Complex ETF",
-    "Price (AUD)": 7.95,
-    "Average 10-day Volume": 94274,
+    "Price (AUD)": 7.89,
+    "Average 10-day Volume": 103469,
     "YTD Return (%)": null,
     "3Y Return (%)": null,
     "5Y Return (%)": null,
@@ -57,13 +57,13 @@
     "52 Week High": 8.14,
     "52 Week Low": 6.79,
     "Inception Date": null,
-    "Updated": "2025-08-25 06:38"
+    "Updated": "2025-08-26 06:36"
   },
   {
     "Ticker": "SYI.AX",
     "Name": "SPDR MSCI Australia Select High Dividend Yield ETF",
-    "Price (AUD)": 30.61,
-    "Average 10-day Volume": 39426,
+    "Price (AUD)": 30.44,
+    "Average 10-day Volume": 32577,
     "YTD Return (%)": 11.54559,
     "3Y Return (%)": 11.4,
     "5Y Return (%)": 12.83,
@@ -72,51 +72,51 @@
     "52 Week High": 31.43,
     "52 Week Low": 25.99,
     "Inception Date": "2010-09-28",
-    "Updated": "2025-08-25 06:38"
+    "Updated": "2025-08-26 06:36"
   },
   {
     "Ticker": "ZYAU.AX",
     "Name": "Global X S&P/ASX 200 High Dividend ETF",
     "Price (AUD)": 9.81,
-    "Average 10-day Volume": 17342,
+    "Average 10-day Volume": 18390,
     "YTD Return (%)": 9.24541,
     "3Y Return (%)": 9.59,
     "5Y Return (%)": 6.19,
-    "P/E Ratio": 14.869848,
+    "P/E Ratio": 14.763742,
     "Dividend Yield": 4.42,
     "52 Week High": 9.88,
     "52 Week Low": 7.73,
     "Inception Date": "2015-06-10",
-    "Updated": "2025-08-25 06:38"
+    "Updated": "2025-08-26 06:36"
   },
   {
     "Ticker": "NDQ.AX",
     "Name": "BetaShares NASDAQ 100 ETF",
-    "Price (AUD)": 53.03,
-    "Average 10-day Volume": 226016,
+    "Price (AUD)": 53.28,
+    "Average 10-day Volume": 232591,
     "YTD Return (%)": 6.34313,
     "3Y Return (%)": 23.81,
     "5Y Return (%)": 17.85,
-    "P/E Ratio": 34.992496,
+    "P/E Ratio": 34.95966,
     "Dividend Yield": 0.98,
     "52 Week High": 54.12,
     "52 Week Low": 40.69,
     "Inception Date": "2020-07-20",
-    "Updated": "2025-08-25 06:38"
+    "Updated": "2025-08-26 06:37"
   },
   {
     "Ticker": "MVB.AX",
     "Name": "VanEck Australian Banks ETF",
-    "Price (AUD)": 43.5,
-    "Average 10-day Volume": 14951,
+    "Price (AUD)": 43.05,
+    "Average 10-day Volume": 16067,
     "YTD Return (%)": 8.67863,
     "3Y Return (%)": 20.74,
     "5Y Return (%)": 22.07,
-    "P/E Ratio": 20.118795,
+    "P/E Ratio": 20.058043,
     "Dividend Yield": 4.22,
     "52 Week High": 43.82,
     "52 Week Low": 32.98,
     "Inception Date": "2013-10-14",
-    "Updated": "2025-08-25 06:38"
+    "Updated": "2025-08-26 06:37"
   }
 ]
