@@ -2,52 +2,52 @@
   {
     "Ticker": "VAE.AX",
     "Name": "Vanguard FTSE Asia ex Japan Shares Index ETF",
-    "Price (AUD)": 94.64,
+    "Price (AUD)": 94.95,
     "Average 10-day Volume": 6823,
     "YTD Return (%)": 20.51818,
     "3Y Return (%)": 15.23,
     "5Y Return (%)": 6.65,
-    "P/E Ratio": 17.019686,
+    "P/E Ratio": 16.967705,
     "Dividend Yield": 1.89,
     "52 Week High": 99.95,
     "52 Week Low": 74.07,
     "Inception Date": "2015-12-09",
-    "Updated": "2025-12-23 06:41"
+    "Updated": "2025-12-24 06:41"
   },
   {
     "Ticker": "ASIA.AX",
     "Name": "BetaShares Asia Technology Tigers ETF",
-    "Price (AUD)": 14.13,
+    "Price (AUD)": 14.16,
     "Average 10-day Volume": 126798,
     "YTD Return (%)": 39.32645,
     "3Y Return (%)": 27.49,
     "5Y Return (%)": 6.28,
-    "P/E Ratio": 20.301092,
+    "P/E Ratio": 20.186398,
     "Dividend Yield": 0.62,
     "52 Week High": 15.39,
     "52 Week Low": 9.36,
     "Inception Date": "2018-09-18",
-    "Updated": "2025-12-23 06:41"
+    "Updated": "2025-12-24 06:41"
   },
   {
     "Ticker": "IAA.AX",
     "Name": "iShares Asia 50 ETF (AU)",
-    "Price (AUD)": 143.83,
+    "Price (AUD)": 144.25,
     "Average 10-day Volume": 14782,
     "YTD Return (%)": 33.27451,
     "3Y Return (%)": 22.0,
     "5Y Return (%)": 7.47,
-    "P/E Ratio": 15.949413,
+    "P/E Ratio": 15.859854,
     "Dividend Yield": 3.61,
     "52 Week High": 153.0,
     "52 Week Low": 100.0,
     "Inception Date": "2007-11-13",
-    "Updated": "2025-12-23 06:41"
+    "Updated": "2025-12-24 06:41"
   },
   {
     "Ticker": "YMAX.AX",
     "Name": "Betashares Australian Top 20 Equities Yield Maximiser Complex ETF",
-    "Price (AUD)": 7.48,
+    "Price (AUD)": 7.57,
     "Average 10-day Volume": 97551,
     "YTD Return (%)": null,
     "3Y Return (%)": null,
@@ -57,66 +57,66 @@
     "52 Week High": 8.07,
     "52 Week Low": 6.79,
     "Inception Date": null,
-    "Updated": "2025-12-23 06:41"
+    "Updated": "2025-12-24 06:41"
   },
   {
     "Ticker": "SYI.AX",
     "Name": "SPDR MSCI Australia Select High Dividend Yield ETF",
-    "Price (AUD)": 29.53,
+    "Price (AUD)": 29.85,
     "Average 10-day Volume": 33894,
     "YTD Return (%)": 13.45281,
     "3Y Return (%)": 9.78,
     "5Y Return (%)": 9.55,
-    "P/E Ratio": 18.182606,
+    "P/E Ratio": 18.085144,
     "Dividend Yield": 12.71,
     "52 Week High": 31.43,
     "52 Week Low": 25.99,
     "Inception Date": "2010-09-28",
-    "Updated": "2025-12-23 06:41"
+    "Updated": "2025-12-24 06:41"
   },
   {
     "Ticker": "ZYAU.AX",
     "Name": "Global X S&P/ASX 200 High Dividend ETF",
-    "Price (AUD)": 9.75,
+    "Price (AUD)": 9.84,
     "Average 10-day Volume": 8325,
     "YTD Return (%)": 14.49793,
     "3Y Return (%)": 10.52,
     "5Y Return (%)": 6.56,
-    "P/E Ratio": 18.113178,
+    "P/E Ratio": 18.076363,
     "Dividend Yield": 4.35,
     "52 Week High": 10.08,
     "52 Week Low": 7.73,
     "Inception Date": "2015-06-10",
-    "Updated": "2025-12-23 06:41"
+    "Updated": "2025-12-24 06:41"
   },
   {
     "Ticker": "NDQ.AX",
     "Name": "BetaShares NASDAQ 100 ETF",
-    "Price (AUD)": 56.58,
+    "Price (AUD)": 56.28,
     "Average 10-day Volume": 186260,
     "YTD Return (%)": 14.42628,
     "3Y Return (%)": 31.45,
     "5Y Return (%)": 18.85,
-    "P/E Ratio": 35.084877,
+    "P/E Ratio": 35.022537,
     "Dividend Yield": 0.91,
     "52 Week High": 58.71,
     "52 Week Low": 40.69,
     "Inception Date": "2020-07-20",
-    "Updated": "2025-12-23 06:41"
+    "Updated": "2025-12-24 06:41"
   },
   {
     "Ticker": "MVB.AX",
     "Name": "VanEck Australian Banks ETF",
-    "Price (AUD)": 41.97,
+    "Price (AUD)": 42.67,
     "Average 10-day Volume": 11629,
     "YTD Return (%)": 10.9705,
     "3Y Return (%)": 18.06,
     "5Y Return (%)": 16.7,
-    "P/E Ratio": 19.941208,
+    "P/E Ratio": 19.786987,
     "Dividend Yield": 4.38,
     "52 Week High": 45.3,
     "52 Week Low": 32.98,
     "Inception Date": "2013-10-14",
-    "Updated": "2025-12-23 06:41"
+    "Updated": "2025-12-24 06:41"
   }
 ]
